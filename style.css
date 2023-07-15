@@ -1,0 +1,123 @@
+   *{
+      margin: 0; 
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Quicksand', sans-serif;
+        text-transform: capitalize;
+        transition:all .2s cubic-bezier(.34,1.12,.68,1.31);
+        text-decoration: none;
+        list-style: none;
+ 
+    }
+body{
+    min-height: 100vh;
+    background-color: #ecf0f1;
+   
+    background-image: linear-gradient(#e7cbb08c 100%,#e7cbb0 0%),url(./img/ba-1.jpg);
+    background-size: cover;
+    
+
+ 
+}
+.container{
+    width: 95%;
+}
+main{
+   position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+main p{
+    color: #fff;
+    text-align: center;
+    padding: .5rem;
+    width: 80%;
+    margin: 0 auto;
+    font-weight: 600;
+}
+.logo {
+    text-align: center;
+}
+.logo img{
+    width: 220px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+a{
+    display: inline-block;
+}
+.links a{
+    
+    text-decoration: none;
+    color: #1010;
+    margin: 1rem 0;
+    font-size:2rem ;
+    width: 180px;
+    padding: .5rem;
+    background-color: hsl(47.14deg 70% 80.39%);
+    color: hsl(192.73deg 100% 12.94%);
+    text-align: center;
+    border-radius: .2rem;
+
+}
+.links a:hover{
+    background-color: hsla(48, 71%, 80%, 0.897);;
+    color: #fff;
+}
+
+footer{
+    margin-top: 1rem;
+    width: 100%;
+   padding: 1.8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color:hsl(192.73deg 100% 12.94%); ;
+}
+@media  only screen and(max-width:767px) {
+    footer{
+        flex-direction: column;
+    }
+    
+}
+@media only screen and (max-width:767px){
+    footer ul:last-child{
+        order: -1;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    
+}
+footer ul:last-child{
+ 
+}
+footer ul:last-child li{
+    
+    color: #fff;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+footer ul li a{
+    color: #fff;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    
+}
+
+footer ul li a span{
+    margin-left: .5rem;
+    color: #fff;
+}
+footer ul li a i{
+    font-size: 1.8rem;
+    color:  hsla(48, 71%, 80%, 0.897);;;
+
+}
